@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Hello Microservices</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='/static/css/bulma.min.css'>
+</head>
+
+<body>
+    <div class="container is-fluid">
+        <div class="notification is-primary">
+            <h1 class="title is-1">Hello Microservices</h1>
+            <br>
+        </div>
+
+
+    </div>
+    <div class="card">
+        <div class="card-content">
+            <p class="title">
+                testing send message with rabbitmq server
+            </p>
+        </div>
+        <footer class="card-content">
+            <h3 class="title is-1">Send</h3>
+            <span>
+                <input class="input" type="text" placeholder="Text input">
+            </span>
+            <span>
+                <input class="button" type="submit" value="Submit">
+            </span>
+            <h3 class="title is-1">Recive</h3>
+            <span>
+                <div class="control">
+                    <textarea class="textarea" placeholder="Waiting message..." disabled> {{ .message }} </textarea>
+                </div>
+            </span>
+
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
